@@ -8,14 +8,15 @@ katharo1 = kila_ladi * dikaioma / 100
 pososto = kila_ladi * 100 / kila_karpou
 dentra = kila_karpou // arithmos_dendrwn
 sakia = kila_karpou // 60
-pososto2 = sakia * 100 / kila_ladi
+pososto2 = kila_ladi / sakia
 katharo = kila_ladi - katharo1
 timi = katharo * timi_polisis
 
-print(katharo1,"κιλά Δικαίομα εργοστασίου ")
-print(katharo,"κιλά Καθαρό: ")
-print(pososto,"% Ποσοστό λαδιού.")
-print(dentra,"κιλά ανά δέντρο, καρπός.")
-print(sakia,"σακιά σύνολο.")
-print(pososto2,"κιλά λάδι ανά Σακί.")
-print(timi,"€.")
+print("=======================")
+print(katharo, "Κιλά Λάδι, Καθαρό. ")
+print(pososto, "% Ποσοστό λαδιού.")
+print(dentra, "Κιλά Καρπού ανά δέντρο.")
+print(sakia, "Σακιά σύνολο.")
+print(pososto2, "Κιλά λάδι ανά Σακί.")
+print(katharo1, "Κιλά Δικαίομα Εργοστασίου ")
+print(timi, "€.")
