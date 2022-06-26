@@ -1,0 +1,21 @@
+kila_karpou = int(input("Δώσε κιλά καρπού ελιάς: "))
+kila_ladi = int(input("Δώσε κιλά λαδι: "))
+arithmos_dendrwn = int(input("Δώσε αριθμό δέντρων: "))
+dikaioma = int(input("Δικαίομα Εργοστασίου: "))
+timi_polisis = float(input("Δώσε τιμή Πώλησης: "))
+
+katharo1 = kila_ladi * dikaioma / 100
+pososto = kila_ladi * 100 / kila_karpou
+dentra = kila_karpou // arithmos_dendrwn
+sakia = kila_karpou // 60
+pososto2 = sakia * 100 / kila_ladi
+katharo = kila_ladi - katharo1
+timi = katharo * timi_polisis
+
+print(katharo1,"κιλά Δικαίομα εργοστασίου ")
+print(katharo,"κιλά Καθαρό: ")
+print(pososto,"% Ποσοστό λαδιού.")
+print(dentra,"κιλά ανά δέντρο, καρπός.")
+print(sakia,"σακιά σύνολο.")
+print(pososto2,"κιλά λάδι ανά Σακί.")
+print(timi,"€.")
